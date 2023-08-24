@@ -1,0 +1,89 @@
+
+body{
+    margin: auto;
+    padding: 0%;
+    background-color: grey;
+}
+
+.container{
+    /* border: 2px solid red; */
+    display: flex;
+    width:80%;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    margin-left: 10%;
+    flex-direction: column;
+}
+
+.container > div > button{
+    appearance: none;
+    background-color: #FFFFFF;
+    border-radius: 40em;
+    border-style: none;
+    box-shadow: #ADCFFF 0 -12px 6px inset;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -.24px;
+    margin: 0;
+    outline: none;
+    padding: 1rem 1.3rem;
+    quotes: auto;
+    text-align: center;
+    text-decoration: none;
+    transition: all .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+
+}
+
+.container > div > button:hover{
+    background-color: #FFC229;
+    box-shadow: #FF6314 0 -6px 8px inset;
+    transform: scale(1.125);
+
+}
+
+.container > div > button:active{
+    transform: scale(1.025);
+}
+
+@media screen and  (min-width: 768px) {
+    .container > div > button {
+        font-size: 1.5rem;
+        padding: .75rem 2rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .container > div > button {
+        font-size: 1rem;
+        padding: .75rem 2rem;
+    } 
+}
+
+
+.container > div > p{
+    font-size: 45px;
+    font-weight: bold;
+    font-variant: small-caps;
+    color:rgb(255, 231, 46);
+    /* color:linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);; */
+}
+
+@media screen and (max-width: 600px){
+    .container > div > p{
+        font-size: 22px;
+        font-weight: bold;
+        font-variant: small-caps;
+        color:red;
+    }
+
+    
+}     

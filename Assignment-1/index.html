@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-1</title>
+    <link rel="stylesheet" href="./style.css" type="text/css"/>
+</head>
+<body>
+    <div class="container">
+        <div>
+             <button id="button" onclick="printMsg()">Click Here</button>
+        </div>
+        <div>
+            <p id="msg"></p>
+        </div>     
+    </div>
+    
+
+
+    <script>
+        function printMsg(){
+            let msg = document.getElementById('msg');
+            msg.innerHTML = "Welcome to the world of JavaScript...";
+        }
+    </script>
+</body>
+</html>
+
+
